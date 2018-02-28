@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>p5js Template</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.3/p5.js"></script>
+    
+    <script>
+        function setup() {
+            createCanvas(800,600);
+            background(214, 192, 223);// light pink
+            
+            // face
+            fill(39,79,231); // blue
+            ellipse(130,170,70,70); // head
+            fill(0);
+            ellipse(125,177,10,15);// left eye
+            fill(0);
+            ellipse(140,180,10,10);// right eye 
+            strokeWeight(3);
+            line(120,190,145,190); // mouth
+            
+            // alien face
+            fill(66,18,162);
+            ellipse(350,200,120,110);// dark purple
+            fill(0);
+            ellipse(325,190,35,15);// left eye
+            ellipse(375,190,35,15);// right eye 
+            ellipse(345,220,20,20);// mouth
+            
+            //body 
+            fill(118,202,119);// light green 
+            rect(280,250,200,130);// stomach
+            fill(0);
+            textAlign(LEFT);
+            textSize(24);
+            text("I Come",290,290);// text 
+            text("In Peace",290,320);// text 
+            
+            //legs
+            fill(241,125,188);// hot pink 
+            ellipse(310,410,60,60);// left leg
+            ellipse(380,410,60,60);// middle leg 
+            ellipse(455,410,60,60);// right leg
+            
+            
+        }
+
+        function draw() {
+            
+        }
+    </script>
+</head>
+
+<body>
+    <div id="code" class="container-fluid">
+        <script src="https://gist-it.appspot.com/github/michaelg0766/p5js/blob/master/zoog.html?footer=0"></script>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(window).bind("load", function() {
+            $('#code').before($('#defaultCanvas0').remove());
+        });
+    </script>
+</body>
+
+
+
+
+</html>
